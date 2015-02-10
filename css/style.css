@@ -88,3 +88,22 @@ on 2015.2.9
     50% {-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);}
     100% {-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}
 }
+
+/*--- l7, wandering-cubes*/
+.l7{background-color: #99CCFF;}
+.wandering-cubes{position: relative; top: 50%; margin: 0 auto; width: 80px; height: 80px;}
+.wandering-cubes > div{position: absolute; width: 36px; height: 36px; background-color: rgba(255,255,255,.5);
+-webkit-animation: cube-move 1.8s infinite ease-in-out; animation: cube-move 1.8s infinite ease-in-out;}
+.wandering-cubes .cube2{-webkit-animation-delay: -0.9s; animation-delay: -0.9s;}
+@-webkit-keyframes cube-move{
+    25% {-webkit-transform: translateX(22px) rotate(-90deg) scale(.5);}
+    50% {-webkit-transform: translateX(22px) translateY(22px) rotate(-180deg);}
+    75% {-webkit-transform: translateX(0px) tranlasteY(22px) rotate(-270deg) scale(.5);}
+    100% {-webkit-transform: rotate(-360deg);}
+}
+@keyframes cube-move{
+    25% {-webkit-transform: translateX(42px) rotate(-90deg) scale(.5); transform: tranlateX(42px) rotate(-90deg) scale(.5);}
+    50% {-webkit-transform: translateX(42px) translateY(42px) rotate(-179deg); transform: translateX(42px) translateY(42px) rotate(-179deg);}
+    75% {-webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(.5);}
+    100% {-webkit-transform: rotate(-360deg); transform: rotate(-360deg);}
+}
