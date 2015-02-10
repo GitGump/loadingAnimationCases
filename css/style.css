@@ -9,7 +9,7 @@ on 2015.2.9
 
 /*--- l1, spinner ---*/
 .l1{background-color: #c18c3d;}
-.spinner{position: relative; top: 50%; margin: 0 auto; width: 160px;}
+.spinner{position: relative; top: 50%; margin: 0 auto; width: 120px;}
 .spinner > div{width: 36px; height: 36px; background-color: rgba(255, 255, 255, 0.5); border-radius: 100%; display: inline-block;
  -webkit-animation: bouncedelay 1.4s infinite ease-in-out both; animation: bouncedelay 1.4s infinite ease-in-out both;}
 .spinner .bounce1{-webkit-animation-delay: -0.32s; animation-delay: -0.32s;}
@@ -21,7 +21,7 @@ on 2015.2.9
 
 /*--- l2, chading-dots ---*/
 .l2{background-color: #006600;}
-.chasing-dots{position: relative; top: 50%; margin: 0 auto; width: 160px; -webkit-animation: rotate 2.0s infinite linear; animation: rotate 2.0s infinite linear;}
+.chasing-dots{position: relative; top: 50%; margin: 0 auto; width: 80px; -webkit-animation: rotate 2.0s infinite linear; animation: rotate 2.0s infinite linear;}
 .chasing-dots > div{width: 36px; height: 36px; background-color: rgba(255, 255, 255, .5); border-radius: 100%; display: inline-block;
 -webkit-animation: bounce 2.0s infinite ease-in-out; animation: bounce 2.0s infinite ease-in-out;}
 .chasing-dots .dot2{top: auto; bottom: 0; -webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
@@ -39,3 +39,10 @@ on 2015.2.9
     0%, 100% {-webkit-transform: scale(0.0); transform: scale(0.0);}
     50% {-webkit-transform: scale(1.0); transform: scale(1.0);}
 }
+
+/*--- l3, double-bounce ---*/
+.l3{background-color: #330033;}
+.double-bounce{position: relative; top: 50%; margin: 0 auto; width: 80px;}
+.double-bounce > div{width: 36px; height: 36px; background-color: rgba(255,255,255,.5); border-radius: 100%; position: absolute; top: 0; left: 0;
+-webkit-animation: bounce 2.0s infinite ease-in-out; animation: bounce 2.0s infinite ease-in-out;}
+.double-bounce .double-bounce2{-webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
