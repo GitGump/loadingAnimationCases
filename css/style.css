@@ -73,3 +73,18 @@ on 2015.2.9
     0% {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
     100% {-webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
+
+/*--- l6, rotating-plane ---*/
+.l6{background-color: #9900FF;}
+.rotating-plane{position: relative; top: 50%; margin: 0 auto; width: 36px; height: 36px; background-color: rgba(255,255,255,.5);
+-webkit-animation: rotateplane 1.2s infinite ease-in-out; animation: rotateplane 1.2s infinite ease-in-out;}
+@-webkit-keyframes rotateplane{
+    0% {-webkit-transform: perspective(120px);}
+    50% {-webkit-transform: perspective(120px) rotateY(180deg);}
+    100% {-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);}
+}
+@keyframes rotateplane{
+    0% {-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg); transform: perspective(120px) rotateX(0deg) rotateY(0deg);}
+    50% {-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);}
+    100% {-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}
+}
