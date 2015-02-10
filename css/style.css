@@ -24,7 +24,7 @@ on 2015.2.9
 .chasing-dots{position: relative; top: 50%; margin: 0 auto; width: 160px; -webkit-animation: rotate 2.0s infinite linear; animation: rotate 2.0s infinite linear;}
 .chasing-dots > div{width: 36px; height: 36px; background-color: rgba(255, 255, 255, .5); border-radius: 100%; display: inline-block;
 -webkit-animation: bounce 2.0s infinite ease-in-out; animation: bounce 2.0s infinite ease-in-out;}
-.dot2{top: auto; bottom: 0; -webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
+.chasing-dots .dot2{top: auto; bottom: 0; -webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
 @-webkit-keyframes rotate{
     100% {-webkit-transform: rotate(360deg);}
 }
