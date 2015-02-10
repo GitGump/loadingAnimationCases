@@ -62,9 +62,9 @@ on 2015.2.9
 
 /*--- l5, wordpress ---*/
 .l5{background-color: #666633;}
-.wordpress{position: relative; top: 50%; margin: 0 auto; width: 36px; height: 36px; background-color: rgba(255,255,255,.5); border-radius: 100%;}
-.inner-circle{position: absolute; top: 5px; left: 5px; width: 10px; height: 10px; border-radius: 100%; background-color: #666633;
+.wordpress{position: relative; top: 50%; margin: 0 auto; width: 36px; height: 36px; background-color: rgba(255,255,255,.5); border-radius: 100%;
 -webkit-animation: inner-circle 1.0s infinite; animation: inner-circle 1.0s infinite;}
+.inner-circle{position: absolute; top: 5px; left: 5px; width: 10px; height: 10px; border-radius: 100%; background-color: #666633;}
 @-webkit-keyframes inner-circle{
     0% {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(360deg);}
