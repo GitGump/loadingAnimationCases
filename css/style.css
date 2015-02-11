@@ -128,8 +128,9 @@ on 2015.2.9
 
 /*--- l9, circle ---*/
 .l9{background-color: #CC3399;}
-.circle{position: relative; top: 50%; margin: 0 auto; width: 36px; -webkit-animation: circle 1.2s infinite; animation: circle 1.2s infinite;}
-.circle >div{position: absolute; top:0; left: 0; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: inline-block; border-radius: 100%;}
+.circle{position: relative; top: 50%; margin: 0 auto; width: 36px;}
+.circle >div{position: absolute; top:0; left: 0; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: inline-block; border-radius: 100%;
+-webkit-animation: circle 1.2s infinite; animation: circle 1.2s infinite;}
 .circle .circle2{-webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
 .circle .circle3{-webkit-animation-delay: -0.8s; animation-delay: -0.8s;}
 .circle .circle4{-webkit-animation-delay: -0.6s; animation-delay: -0.6s;}
