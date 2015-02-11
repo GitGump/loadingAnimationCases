@@ -128,13 +128,8 @@ on 2015.2.9
 
 /*--- l9, circle ---*/
 .l9{background-color: #CC3399;}
-.circle{position: relative; top: 50%; margin: 0 auto; width: 36px; -webkit-animation: 1.2s infinite; animation: 1.2s infinite;}
+.circle{position: relative; top: 50%; margin: 0 auto; width: 36px; -webkit-animation: circle 1.2s infinite; animation: circle 1.2s infinite;}
 .circle >div{position: absolute; top:0; left: 0; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: inline-block; border-radius: 100%;}
-.circle .circle2{-webkit-transform: rotate(30deg); transform: rotate(30deg);}
-.circle .circle3{-webkit-transform: rotate(60deg); transform: rotate(60deg);}
-.circle .circle4{-webkit-transform: rotate(120deg); transform: rotate(120deg);}
-.circle .circle5{-webkit-transform: rotate(180deg); transform: rotate(180deg);}
-.circle .circle6{-webkit-transform: rotate(270deg); transform: rotate(270deg);}
 .circle .circle2{-webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
 .circle .circle3{-webkit-animation-delay: -0.8s; animation-delay: -0.8s;}
 .circle .circle4{-webkit-animation-delay: -0.6s; animation-delay: -0.6s;}
