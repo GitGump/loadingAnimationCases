@@ -110,8 +110,9 @@ on 2015.2.9
 
 /*--- l8, wave ---*/
 .l8{background-color: #CCCC99;}
-.wave{position: relative; top: 50%; margin: 0 auto; width: 50px; background-color: rgba(255,255,255,.5);}
-.wave > div{width: 10px; height: 30px; display: inline-block; -webkit-animation: stretchdelay 1.2s infinite ease-in-out; animation: stretchdelay 1.2s infinite ease-in-out;}
+.wave{position: relative; top: 50%; margin: 0 auto; width: 68px;}
+.wave > div{width: 10px; height: 30px; background-color: rgba(255,255,255,.5); display: inline-block;
+-webkit-animation: stretchdelay 1.2s infinite ease-in-out; animation: stretchdelay 1.2s infinite ease-in-out;}
 .wave .rect2{-webkit-animation-delay: -1.1s; animation-delay: -1.1s;}
 .wave .rect3{-webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
 .wave .rect4{-webkit-animation-delay: -0.9s; animation-delay: -0.9s;}
