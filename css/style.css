@@ -265,12 +265,18 @@ img{max-width: 100%;}
 /*--- l9, circle ---*/
 .l9{background-color: #CC3399;}
 .fading-circle{position: relative; top: 50%; margin: 0 auto; width: 72px; height: 72px; -webkit-animation: fading-circle 1.2s infinite ease-in-out; animation: fading-circle 1.2s infinite ease-in-out;}
-.fading-circle >div{position: absolute; top:0; left: 0; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: inline-block; border-radius: 100%;}
+.fading-circle >div{position: absolute; left: 0; top: 0;}
+.fading-circle >div:before{content:''; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: block; border-radius: 100%;}
 .fading-circle .fading-circle2{-webkit-transform: rotate(60deg); transform: rotate(60deg);}
 .fading-circle .fading-circle3{-webkit-transform: rotate(120deg); transform: rotate(120deg);}
 .fading-circle .fading-circle4{-webkit-transform: rotate(180deg); transform: rotate(180deg);}
 .fading-circle .fading-circle5{-webkit-transform: rotate(240deg); transform: rotate(240deg);}
 .fading-circle .fading-circle6{-webkit-transform: rotate(300deg); transform: rotate(300deg);}
+.fading-cricle .fading-circle2:before{-webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
+.fading-circle .fading-circle3:before{-webkit-animation-delay: -0.8s; animation-delay: -0.8s;}
+.fading-circle .fading-circle4:before{-webkit-animation-delay: -0.6s; animation-delay: -0.6s;}
+.fading-circle .fading-circle5:before{-webkit-animation-delay: -0.4s; animation-delay: -0.4s;}
+.fading-circle .fading-circle6:before{-webkit-animation-delay: -0.2s; animation-delay: -0.2s;}
 @-webkit-keyframes fading-circle{
     0%, 39%, 100% {opacity: 0;}
     40% {opacity: 1;}
