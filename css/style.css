@@ -55,13 +55,28 @@ img{max-width: 100%;}
 /*--- l1, spinner ---*/
 .l1{background-color: #c18c3d;}
 .three-bounce{position: relative; top: 50%; margin: 0 auto; width: 118px;}
-.three-bounce > div{width: 36px; height: 36px; background-color: rgba(255, 255, 255, 0.5); border-radius: 100%; display: inline-block;
- -webkit-animation: bouncedelay 1.4s infinite ease-in-out both; animation: bouncedelay 1.4s infinite ease-in-out both;}
-.three-bounce .bounce1{-webkit-animation-delay: -0.32s; animation-delay: -0.32s;}
-.three-bounce .bounce2{-webkit-animation-delay: -0.16s; animation-delay: -0.16s;}
+.three-bounce > div{width: 36px; height: 36px; background-color: rgba(255, 255, 255, 0.5); border-radius: 100%; display: inline-block; -webkit-animation: bouncedelay 1.4s infinite ease-in-out both; animation: bouncedelay 1.4s infinite ease-in-out both; -moz-animation: bouncedelay 1.4s infinite ease-in-out both; -o-animation: bouncedelay 1.4s infinite ease-in-out both; -ms-animation: bouncedelay 1.4s infinite ease-in-out both;}
+.three-bounce .bounce1{-webkit-animation-delay: -0.32s; animation-delay: -0.32s; -moz-animation-delay: -0.32s; -o-animation-delay: -0.32s; -ms-animation-delay: -0.32s;}
+.three-bounce .bounce2{-webkit-animation-delay: -0.16s; animation-delay: -0.16s; -moz-animation-delay: -0.16s; -o-animation-delay: -0.16s; -ms-animation-delay: -0.16s;}
 @-webkit-keyframes bouncedelay{
     0%, 80%, 100% {-webkit-transform: scale(0.0);}
     40% {-webkit-transform: scale(1.0);}
+}
+@keyframes bouncedelay{
+    0%, 80%, 100%{transform: scale(0.0);}
+    40% {transform: scale(1.0);}
+}
+@-moz-keyframes bouncedelay{
+    0%, 80%, 100% {-moz-transform: scale(0.0);}
+    40% {-moz-animation: scale(1.0);}
+}
+@-o-keyframes bouncedelay{
+    0%, 80%, 100% {-o-transform: scale(0.0);}
+    40% {-o-animation: scale(1.0);}
+}
+@-ms-keyframes bouncedelay{
+    0%, 80%, 100% {-ms-transform: scale(0.0);}
+    40% {-ms-transform: scale(1.0);}
 }
 
 /*--- l2, chading-dots ---*/
