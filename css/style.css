@@ -120,15 +120,26 @@ img{max-width: 100%;}
 
 /*--- l4, pulse ---*/
 .l4{background-color: #3399CC;}
-.pulse{position: relative; top: 50%; margin: 0 auto; width: 36px; height: 36px; background-color: rgba(255,255,255,.5); border-radius: 100%;
--webkit-animation: scaleout 1.0s infinite ease-in-out; animation: scaleout 1.0s infinite ease-in-out;}
+.pulse{position: relative; top: 50%; margin: 0 auto; width: 36px; height: 36px; background-color: rgba(255,255,255,.5); border-radius: 100%; -webkit-animation: scaleout 1.0s infinite ease-in-out; animation: scaleout 1.0s infinite ease-in-out; -moz-animation: scaleout 1.0s infinite ease-in-out; -o-animation: scaleout 1.0s infinite ease-in-out; -ms-animation: 1.0s infinite ease-in-out;}
 @-webkit-keyframes scaleout{
     0% {-webkit-transform: scale(0.0);}
     100% {-webkit-transform: scale(1.0); opacity: 0;}
 }
 @keyframes scaleout{
-    0% {-webkit-transform: scale(0.0); transform: scale(0.0);}
-    100% {-webkit-transform: scale(1.0); transform: scale(1.0); opacity: 0;}
+    0% {-webkit-transform: scale(0.0); transform: scale(0.0); -moz-transform: scale(0.0); -o-transform: scale(0.0); -ms-transform: scale(0.0);}
+    100% {-webkit-transform: scale(1.0); transform: scale(1.0); -moz-transform: scale(1.0); -o-transform: scale(1.0); -ms-transform: scale(1.0); opacity: 0;}
+}
+@-moz-keyframes scaleout{
+    0% {-moz-transform: scale(0.0);}
+    100% {-moz-transform: scale(1.0);}
+}
+@-o-keyframes scaleout{
+    0% {-o-transform: scale(0.0);}
+    100% {-o-transform: scale(1.0);}
+}
+@-ms-keyframes scaleout{
+    0% {-ms-transform: scale(0.0);}
+    100% {-ms-transform: scale(1.0);}
 }
 
 /*--- l5, wordpress ---*/
