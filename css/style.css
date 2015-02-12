@@ -68,11 +68,11 @@ img{max-width: 100%;}
 }
 @-moz-keyframes bouncedelay{
     0%, 80%, 100% {-moz-transform: scale(0.0);}
-    40% {-moz-animation: scale(1.0);}
+    40% {-moz-transform: scale(1.0);}
 }
 @-o-keyframes bouncedelay{
     0%, 80%, 100% {-o-transform: scale(0.0);}
-    40% {-o-animation: scale(1.0);}
+    40% {-o-transform: scale(1.0);}
 }
 @-ms-keyframes bouncedelay{
     0%, 80%, 100% {-ms-transform: scale(0.0);}
