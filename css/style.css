@@ -170,16 +170,31 @@ img{max-width: 100%;}
 /*--- l6, rotating-plane ---*/
 .l6{background-color: #9900FF;}
 .rotating-plane{position: relative; top: 50%; margin: 0 auto; width: 36px; height: 36px; background-color: rgba(255,255,255,.5);
--webkit-animation: rotateplane 1.2s infinite ease-in-out; animation: rotateplane 1.2s infinite ease-in-out;}
+-webkit-animation: rotateplane 1.2s infinite ease-in-out; animation: rotateplane 1.2s infinite ease-in-out; -moz-animation: rotateplane 1.2s infinite ease-in-out; -o-animation: rotateplane 1.2s infinite ease-in-out; -ms-animation: rotateplane 1.2s infinite ease-in-out;}
 @-webkit-keyframes rotateplane{
     0% {-webkit-transform: perspective(120px);}
     50% {-webkit-transform: perspective(120px) rotateY(180deg);}
     100% {-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);}
 }
 @keyframes rotateplane{
-    0% {-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg); transform: perspective(120px) rotateX(0deg) rotateY(0deg);}
-    50% {-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);}
-    100% {-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}
+    0% {-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg); transform: perspective(120px) rotateX(0deg) rotateY(0deg); -moz-transform: perspective(120px) rotateX(0deg) rotateY(0deg); -o-transform: perspective(120px) rotateX(0deg) rotateY(0deg); -ms-transform: perspective(120px) rotateX(0deg) rotateY(0deg);}
+    50% {-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); -moz-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); -o-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); -ms-transform: perspective rotateX(-180.1deg) rotateY(0deg);}
+    100% {-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); -moz-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); -o-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}
+}
+@-moz-keyframes rotateplane{
+    0% {-moz-transform: perspective(120px);}
+    50% {-moz-transform: perspective(120px) rotateY(180deg);}
+    100% {-moz-transform: perspective(120px) rotateY(180deg) rotateX(180deg);}
+}
+@-o-keyframes rotateplane{
+    0% {-o-transform: perspective(120px);}
+    50% {-o-transform: perspective(120px) rotateY(180deg);}
+    100% {-o-transform: perspective(120px) rotateY(180deg) rotateX(180deg);}
+}
+@-ms-keyframes rotateplane{
+    0% {-ms-transform: perspective(120px);}
+    50% {-ms-transform: perspective(120px) rotateY(180deg);}
+    100% {-ms-transform: perspective(120px) rotateY(180deg) rotateX(180deg);}
 }
 
 /*--- l7, wandering-cubes ---*/
