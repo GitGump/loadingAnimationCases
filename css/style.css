@@ -264,7 +264,7 @@ img{max-width: 100%;}
 
 /*--- l9, circle ---*/
 .l9{background-color: #CC3399;}
-.fading-circle{position: relative; top: 50%; margin: 0 auto; width: 72px; height: 72px;}
+.fading-circle{position: relative; top: 50%; margin: 0 auto; width: 24px; height: 24px;}
 .fading-circle >div{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .fading-circle >div:before{content: ''; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: block; border-radius: 100%; -webkit-animation: fading-circle 1.2s infinite ease-in-out; animation: fading-circle 1.2s infinite ease-in-out;}
 .fading-circle .fading-circle2{-webkit-transform: rotate(30deg); transform: rotate(30deg);}
