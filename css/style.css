@@ -264,9 +264,9 @@ img{max-width: 100%;}
 
 /*--- l9, circle ---*/
 .l9{background-color: #CC3399;}
-.fading-circle{position: relative; top: 50%; margin: 0 auto; width: 72px; height: 72px; -webkit-animation: fading-circle 1.2s infinite ease-in-out; animation: fading-circle 1.2s infinite ease-in-out;}
+.fading-circle{position: relative; top: 50%; margin: 0 auto; width: 72px; height: 72px;}
 .fading-circle >div{position: absolute; left: 0; top: 0;}
-.fading-circle >div:before{content: ''; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: block; border-radius: 100%;}
+.fading-circle >div:before{content: ''; width: 4px; height: 4px; background-color: rgba(255,255,255,.5); display: block; border-radius: 100%; -webkit-animation: fading-circle 1.2s infinite ease-in-out; animation: fading-circle 1.2s infinite ease-in-out;}
 .fading-circle2{-webkit-transform: rotate(30deg); transform: rotate(30deg);}
 .fading-circle3{-webkit-transform: rotate(60deg); transform: rotate(60deg);}
 .fading-circle4{-webkit-transform: rotate(90deg); transform: rotate(90deg);}
